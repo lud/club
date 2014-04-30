@@ -1,0 +1,56 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateClubUsersTable extends Migration {
+
+	/**
+	 * Run the migrations.
+	 *
+	 * @return void
+	 */
+	public function up()
+	{
+		// Creates the tablename_placeholder table
+		Schema::create('tablename_placeholder', function($table)
+		{
+			$table->increments('id');
+
+			$table->string('email')->unique();
+
+			$table->string('password');
+
+			$table->string('remember_token', 60)->nullable();
+
+			// Feel free to add your own columns here :
+
+			// $table->string('full_name');
+			// $table->string('age');
+			// $table->string('preferred_beer_brand');
+
+			// This is not used for now (next features) :
+			$table->string('confirmation_code')
+				->nullable(); // remove when implemented
+			$table->boolean('confirmed')
+				->nullable() // remove when implemented
+				->default(false);
+
+			$table->integer('roles')->default(0);
+
+			// The laravel classic models timestamps
+			$table->timestamps();
+
+		});
+	}
+
+	/**
+	 * Reverse the migrations.
+	 *
+	 * @return void
+	 */
+	public function down()
+	{
+		Schema::drop('tablename_placeholder');
+	}
+}

@@ -1,0 +1,22 @@
+{
+    "name": "lud/club",
+    "description": "",
+    "authors": [
+        {
+            "name": "lud",
+            "email": "dummy@email.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Lud\\Club\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
