@@ -72,7 +72,7 @@ return array(
 	| include a form, e.g. signup_form_wrapper includes singup_form. This way,
 	| you can put your own views in this config and include the forms in them.
 	| Alternatively, you can use club's views and just set the base_layout
-	| config, providing you base layout. Each wrapper defines a single 'content'
+	| config, providing you base layout. Each wrapper defines a single 'club'
 	| section
 	|
 	*/
