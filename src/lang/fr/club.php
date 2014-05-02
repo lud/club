@@ -21,8 +21,9 @@ return array(
 	),
 	'labels' => array(
 		'remember_me' => 'Se souvenir de moi',
-		'lost_password' => 'J\'ai oublié mon mot de passse',
+		'lost_password' => 'J\'ai oublié mon mot de passe',
 		'goto_signup' => 'Créer un compte',
 		'already_registered' => "J'ai déjà un compte",
+		'password_recovery_subject' => "Récupération de votre mot de passe",
 	),
 );
