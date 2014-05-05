@@ -115,6 +115,7 @@ class ClubController extends Controller {
 			Session::set('club.login_fail_email',$email);
 			$brokerResponse = Password::remind(Input::only('email'), function($m,$user,$token)
 			{
+				$m->subject(Lang::get('club::club.labels.password_recovery_subject'));
 				Log::info('Club reminder sent, url = '.URL::route('club.reset_password_access',array($token)));
 			});
 			switch($brokerResponse)
