@@ -15,7 +15,7 @@
 
 <div class="container">
 	<div class="content">
-		@section('content')
+		@section('club')
 		@show
 	</div>
 </div>
