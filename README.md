@@ -33,7 +33,7 @@ Howto
 class User extends Eloquent implements UserInterface, RemindableInterface {
 	// ...
 	public $rules = array(
-		'email'    => 'required|email|unique:'.$model->getTable().',email',
+		'email'    => 'required|email|unique:'.$this->getTable().',email',
 		'password' => 'required|min:3'
 	);
 	// ...
