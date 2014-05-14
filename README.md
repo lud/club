@@ -41,6 +41,6 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 ```
 
 - edit the views, the views config and/or the base layout
-- set config.auth.reminder.email to 'club::emails.reminder_email' to use club's configurable routes.
+- set config.auth.reminder.email to 'club::emails.reminder_email' to use club's configurable routes, or set the route to the following on your custom view `{{ URL::route('club.reset_password_access', array($token)) }}`
 - check Lang::get('validation.attributes.[...]') for form labels
 - Using roles (php 5.4) : add trait to your model, then add constants to your model, using 1 and powers of two only (1,2,4,8,16,32,64,...)
