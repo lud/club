@@ -26,7 +26,7 @@ Howto
 - check the config, publish the config if needed
 - php composer dump-autoload
 - php artisan migrate
-- change auth filter to redirect to route 'club.login' instead of 'login'
+- change auth filter to redirect to route('club.login') instead of guest('login')
 - edit app/models/User.php model to add validation rules. The default rules are :
 
 ```PHP
