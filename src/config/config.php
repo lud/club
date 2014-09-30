@@ -55,9 +55,11 @@ return array(
 	| named routes (since you provide routes names) and GET method.
 	| Set it to null to disable the feature.
 	| You can also set it to 'all' to work on every (named) route, but if some
-	| of your routes requires login (e.g. uses 'before' => 'auth'), when users
-	| logout on theese routes views they will end up on the login page. If such
-	| routes are not named (do not use 'as' => '<name>') it'll be ok
+	| of your routes requires logIN (e.g. uses 'before' => 'auth'), when users
+	| logOUT on theese routes they will end up on the login page (after
+	| beeing redirected to the same route that requires login and fail on auth
+	| filter). If such routes are not named (do not use 'as' => '<name>') it'll
+	| be ok.
 	*/
 	'stay_on_page_routes' => 'all',
 

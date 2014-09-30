@@ -7,7 +7,8 @@
 		<h2>Password Reset</h2>
 
 		<div>
-			To reset your password, complete this form: {{ URL::route('club.reset_password_access', array($token)) }}.
+			To reset your password, complete this form: {{ URL::route('club.reset_password_access', array($token)) }}.<br/>
+			This link will expire in {{ Config::get('auth.reminder.expire', 60) }} minutes.
 		</div>
 	</body>
 </html>
