@@ -222,11 +222,13 @@ class User extends Eloquent {
 Feel free to set your own rules according to the [Laravel documentation](http://laravel.com/docs/master/validation).
 
 
-### Todo
+### Roadmap
 
-* Enable "Stay on the page" on signup
+* Enable "Stay on the page" when clicking signup
 * Document UserRolesTrait
 * Allow to login without email : provide way to choose arbitrary fields (e.g.
 `username`).
 * `stay_on_page` default should be `null` ?
 * Finish the docs
+* Use L5 features (Request/AuthController/LoginRequest ?)
+* Document L5 Installation
