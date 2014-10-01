@@ -8,8 +8,7 @@ return array(
 	),
 	'errors' => array(
 		'signup_when_loggedin' => 'Vous ne pouvez pas créer de compte en étant connecté(e).',
-		'user_not_found' => 'Aucun utilisateur n\'a été trouvé avec ces identifiants.',
-        'login_fail' => 'Identifiants erronés, vérifiez l\'email ou le mot de passe.',
+		'user_not_found' => 'Identifiants erronés, vérifiez l\'email ou le mot de passe.',
         'invalid_reset_token' => 'Ce lien de récupération de mot de passe n\'est plus valide.',
         'password_mismatch' => 'Les mots de passe ne correspondent pas.',
 	),
@@ -17,7 +16,7 @@ return array(
 		'signup' => 'Créer le compte',
 		'login' => 'Se connecter',
 		'lost_password' => 'Récupérer mon compte',
-		'change_password' => 'Canger le mot de passe',
+		'change_password' => 'Changer le mot de passe',
 	),
 	'labels' => array(
 		'remember_me' => 'Se souvenir de moi',
